@@ -1,3 +1,43 @@
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/form-field/mdc-form-field";
+@import "@material/checkbox/mdc-checkbox";
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 11px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 *, body, html {
   padding: 0;
   margin: 0;
@@ -5,14 +45,14 @@
 }
 
 header {
-  height: 110px;
+  height: 55px;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1;
 }
 
 header .left {
@@ -20,12 +60,12 @@ header .left {
   align-items: center;
   justify-content: flex-start;
   height: 100%;
-  width: 410px;
+  width: 205px;
   background: #303f9f;
 }
 
 header .left .logo {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 header .right {
@@ -33,101 +73,175 @@ header .right {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  width: calc(100% - 410px);
+  width: calc(100% - 205px);
   background: #3f51b5;
 }
 
 header .right .dashboard {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 header .right .icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 header .right .icons .icon {
   margin-left: 10px;
   margin-right: 10px;
+  color: #fff;
+}
+.icon .material-icons{
+  font-size: 20px;
+}
+ header .alarm {
+  font-size: 12.5;
+  transform: translateY(5px);
+  cursor: pointer;
+}
+header .alarm .circle {
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background: #ff5b5b;
+  position: relative;
+  right: -15px;
+  top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7px;
+  transform: translate(-2px,10px);
+  padding-bottom: 1px;
 }
 
 header .left .text {
   color: #fff;
-  font-size: 21px;
+  font-size: 12.5px;
   font-weight: bold;
   transform: translateY(-3px);
 }
 
 header .dashboard {
-  font-size: 18.75px;
+  font-size: 9.4px;
   color: #c5cae9;
 }
 
-header .icon {
-  padding-left: 17.5px;
-  padding-right: 17.5px;
-}
 
 header .logo {
-  margin-right: 17px;
+  margin-right: 8.5px;
 }
 
 .sidebar {
   position: fixed;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 410px;
+  width: 205px;
   height: 100%;
   background: #fff;
 }
 
 .sidebar .person {
-  height: 200px;
+  height: 100px;
   width: 100%;
   border-bottom: solid 1px #edf0f5;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .sidebar .person .photo {
   display: block;
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
 }
 
 .sidebar .person .information {
-  margin-left: 35px;
-  font-size: 12.5px;
+  margin-left: 17.5px;
+  font-size: 6.3px;
   font-weight: 400;
 }
 
 .sidebar .person .name {
-  font-size: 16.67px;
+  font-size: 8.35px;
   font-weight: bold;
   color: #6a6c6f;
 }
 
 .sidebar .items {
-  height: 93px;
-}
-
-.UI {
-  background-color: #f00;
-  height: 93px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  font-size: 9.4px;
+  font-weight: bold;
+  height: 46.5px;
+  color: #6a6c6f;
+  padding-left: 20px;
+
+}
+
+.sidebar .items:hover {
+  background-color: #edf0f5;
+}
+.UI {
+  margin-top: 25px;
+  height: 46.5px;
+  display: flex;
+  align-items: center;
+  font-size: 6.3px;
+  font-weight: 600;
+  color: #6a6c6f;
+}
+.sidebar .last-items{
+    border-bottom: solid 1px #edf0f5;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.sidebar .subitems{
+  display: flex;
+  align-items: center;
+  font-size: 9.4px;
+  font-weight: bold;
+  height: 46.5px;
+  color: #6a6c6f;
+  margin-left: 20px;
+}
+
+.sidebar .last-subitems{
+  padding-bottom: 45px;
 }
 
 .content {
-  margin-left: 410px;
-  margin-top: 110px;
-  height: 100vh;
+  margin-left: 205px;
+  margin-top: 55px;
+  height: 100%;
   background-color: #edf0f5;
   font-size: 25px
+}
+.content .welcome{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 72.5px;
+  font-size: 12.5px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.content .text{
+margin-bottom: 15px;
+}
+
+.content .under-text{
+  font-size: 8.35px;
+}
+
+.content .number{
+  font-size: 16.7px;
+  font-weight: bold;
 }
