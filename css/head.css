@@ -2,14 +2,131 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
+  src: url("https://example.com/MaterialIcons-Regular.eot");
   /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("https://example.com/MaterialIcons-Regular.woff2") format("woff2"), url("https://example.com/MaterialIcons-Regular.woff") format("woff"), url("https://example.com/MaterialIcons-Regular.ttf") format("truetype");
+}
+
+.content .activities {
+  border-width: 1px;
+  border-color: #d7e0f1;
+  border-style: solid;
+  height: 204px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.content .activities .title {
+  font-size: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #d9dfe9;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.content .activities .flex {
+  display: flex;
+}
+
+.content .activities .main_text {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.content .activities .activities_text {
+  font-size: 8px;
+  color: #b0b0b0;
+  padding-left: 10px;
+}
+
+.content .activities .blue_activities {
+  display: block;
+  padding-top: 5px;
+  height: 37px;
+  margin-left: 20px;
+  border-left: 1px solid #3f51b5;
+}
+
+.content .activities .blue_activities .blue {
+  margin-left: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100px;
+  background: #3f51b5;
+}
+
+.content .activities .red_activities {
+  display: block;
+  padding-top: 5px;
+  height: 37px;
+  margin-left: 20px;
+  border-left: 1px solid #e64a19;
+}
+
+.content .activities .red_activities .red {
+  margin-left: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100px;
+  background: #e64a19;
+}
+
+.content .activities .green_activities {
+  display: block;
+  padding-top: 5px;
+  height: 37px;
+  margin-left: 20px;
+  border-left: 1px solid #4caf50;
+}
+
+.content .activities .green_activities .green {
+  margin-left: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100px;
+  background: #4caf50;
+}
+
+.content .todo_list {
+  margin-top: 25px;
+  border-width: 1px;
+  border-color: #d7e0f1;
+  border-style: solid;
+  background-color: #fff;
+}
+
+.content .todo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  margin: 0 18px 5px;
+  background-color: #fff;
+  border-bottom: 1px solid #d9dfe9;
+}
+
+.content .todo .todo_button {
+  display: flex;
+  align-content: center;
+  padding: 5px 30px;
+  font-size: 7.5px;
+  font-weight: 500;
+  background-color: #4caf50;
+}
+
+.content .todo .todo_text {
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .content .check {
   background-color: #fff;
-  margin-top: 25px;
+}
+
+.content .check .check_text {
+  font-size: 10.2px;
+  font-weight: 500;
 }
 
 .content .graf {
@@ -25,6 +142,9 @@
   justify-content: space-between;
   padding-left: 35px;
   padding-right: 35px;
+  border-width: 1px;
+  border-color: #d7e0f1;
+  border-style: solid;
 }
 
 .content .prob .blue_namber {
@@ -119,50 +239,67 @@
   display: flex;
   align-items: center;
   background-color: white;
-  height: 75px;
-  font-size: 12.5px;
+  height: 90px;
+  font-size: 15px;
   justify-content: space-between;
   padding-left: 35px;
   padding-right: 35px;
+  border-width: 1px;
+  border-color: #d7e0f1;
+  border-style: solid;
 }
 
 .content .stat .material-icons {
-  font-size: 40px;
+  font-size: 48px;
   color: #e9e9e9;
 }
 
 .content .stat .blue_namber {
-  font-size: 10.50px;
+  font-size: 13px;
   font-weight: bold;
   color: #3f51b5;
   margin-bottom: 10px;
 }
 
 .content .stat .red_namber {
-  font-size: 10.50px;
+  font-size: 13px;
   font-weight: bold;
   color: #e64a19;
   margin-bottom: 10px;
 }
 
 .content .stat .green_namber {
-  font-size: 10.50px;
+  font-size: 13px;
   font-weight: bold;
   color: #4caf50;
   margin-bottom: 10px;
 }
 
 .content .stat .yellow_namber {
-  font-size: 10.50px;
+  font-size: 13px;
   font-weight: bold;
   color: #ffa000;
   margin-bottom: 10px;
+}
+
+.content .under_table {
+  border-top: 1px solid #d9dfe9;
+  font-size: 13px;
+  font-weight: 500;
+  color: #929393;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding-left: 18px;
 }
 
 .content .table {
   height: 335px;
   background: #fff;
   margin-top: 25px;
+  border-width: 1px;
+  border-color: #d7e0f1;
+  border-style: solid;
 }
 
 .content .table .table_header {
