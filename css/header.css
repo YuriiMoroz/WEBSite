@@ -2,6 +2,9 @@
 @import "@material/form-field/mdc-form-field";
 @import "@material/checkbox/mdc-checkbox";
 @import "@material/button/mdc-button";
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
 
 @font-face {
   font-family: 'Material Icons';
@@ -136,11 +139,11 @@ header .logo {
 }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
   width: 246px;
-  height: 100%;
+  height: 1400px;
   background: #fff;
 }
 
@@ -176,12 +179,46 @@ header .logo {
 .sidebar .items {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   font-size: 12px;
   font-weight: bold;
   height: 56px;
   color: #6a6c6f;
   padding-left: 20px;
 
+}
+.sidebar .items .color_red{
+  display: grid;
+  text-align: center;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  margin-right: 25px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 200;
+}
+.sidebar .items .green_color{
+  display: grid;
+  text-align: center;
+  border-radius: 5px;
+  background-color: green;
+  height: 15px;
+  width: 15px;
+  margin-right: 25px;
+  color: #fff;
+  font-weight: 200;
+}
+.sidebar .items .blue_color{
+  display: grid;
+  border-radius: 5px;
+  text-align: center;
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+  margin-right: 25px;
+  color: #fff;
+  font-weight: 200;
 }
 
 .sidebar .items:hover {
@@ -226,7 +263,7 @@ header .logo {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 86.5px;
+  height: 86px;
   font-size: 15px;
   margin-bottom: 25px;
   justify-content: space-between;
@@ -250,17 +287,7 @@ margin-bottom: 15px;
   font-weight: bold;
 }
 
-.top-menu {
-  display: none;
-  position: absolute;
-  padding: 5px 5px;
-  width: 230px;
-  height: 230px;
-  background-color: green;
-  border: 1px solid black;
-  right: 100px;
-  top: 50px;
-}
+
 a[href="#menu"] {
   display: block;
   position: absolute;

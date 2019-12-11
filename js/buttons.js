@@ -1,6 +1,4 @@
-import {MDCFormField} from '@material/form-field';
-import {MDCCheckbox} from '@material/checkbox';
+import {MDCMenu} from '@material/menu';
 
-const checkbox = new MDCCheckbox(document.querySelector('.mdc-checkbox'));
-const formField = new MDCFormField(document.querySelector('.mdc-form-field'));
-formField.input = checkbox;
+const menu = new MDCMenu(document.querySelector('.mdc-menu'));
+menu.open = true;
