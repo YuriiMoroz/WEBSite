@@ -11,7 +11,10 @@
   <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
   <!---  Addons        -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <title> </title>
+  <!--React-->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <title>Document</title>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="css/header.css">
@@ -35,90 +38,7 @@
       <div class="dashboard">
         Dashboard
       </div>
-      <div class="icons">
-        <div class="icon">
-          <div class="alarm">
-            <i class="material-icons">
-              notifications
-              <span class="circle">3</span>
-            </i>
-          </div>
-        </div>
-        <div class="icon">
-          <div class="alarm">
-            <i class="material-icons">
-              local_post_office
-              <span class="circle">4</span>
-            </i>
-          </div>
-        </div>
-        <div class="icon">
-          <i class="material-icons">
-            search
-          </i>
-        </div>
-        <div class="icon">
-          <div class="mdc-menu mdc-menu-surface">
-            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-              <li class="mdc-list-item" role="menuitem">
-                <span class="mdc-list-item__text">A Menu Item</span>
-              </li>
-              <li class="mdc-list-item" role="menuitem">
-                <span class="mdc-list-item__text">Another Menu Item</span>
-              </li>
-            </ul>
-          </div>
-          <i class="material-icons">
-            apps
-          </i>
-          <a href="#menu"></a>
-          <div class="top-menu">
-
-            <div class="profile">
-              <i class="material-icons">
-                person
-              </i>
-              <div>
-                My profile
-              </div>
-            </div>
-            <div class="profile">
-              <div class="euro"> &euro;</div> Balance
-            </div>
-            <div class="profile1">
-              <div class="flex">
-              <i class="material-icons">
-                language
-              </i>
-              <div>Conection</div>
-              </div>
-              <div class="blue_color">
-                27
-              </div>
-            </div>
-            <div class="profile">
-              <i class="material-icons">
-                people_alt
-              </i>
-              Friends
-            </div>
-            <div class="border">
-              <i class="material-icons">
-                calendar_today
-              </i>
-              Events
-            </div>
-            <div class="profile">
-              <i class="material-icons">
-                settings
-              </i>
-              Acсount settings
-            </div>
-            <div class="profile">
-
-            </div>
-          </div>
-        </div>
+      <div id="icons">
       </div>
     </div>
 
@@ -138,224 +58,18 @@
         </div>
       </div>
     </div>
-    <div class="items">
-      <div class="UI">
-        UI Kits
-      </div>
-    </div>
-    <div class="items">
-      <div>
-      <i class="material-icons">
-        home
-      </i>
-      Dashboard
-    </div>
-    </div>
-    <div class="items">
-      <div>
-      <i class="material-icons">
-        flash_on
-      </i>
-      Apps
-    </div>
-      <div class="color_red">
-        3
-      </div>
-    </div>
-    <div class="items">
-      <div>
-      <i class="material-icons">
-        lock
-      </i>
-      Components
-    </div>
-    <div class="green_color">
-      9
-    </div>
-    </div>
-    <div class="items">
-      <div>
-      <i class="material-icons">
-        local_post_office
-      </i>
-      EMAIL
-      </div>
-      <div class="blue_color">
-        4
-      </div>
-    </div>
-    <div class="items">
-      <div>
-      <i class="material-icons">
-        whatshot
-      </i>
-      Form
-    </div>
-    </div>
-    <div class="items">
-      <div>
-      <i class="material-icons">
-        map
-      </i>
-      Maps
-      </div>
-    </div>
-    <div class="items">
-      <div>
-      <i class="material-icons">
-        library_books
-      </i>
-      Pages
-      </div>
-    </div>
-    <div class="last-items">
-      <div class="items">
-        <div>
-        <i class="material-icons">
-          format_align_left
-        </i>
-        Menu
-      </div>
-      </div>
-    </div>
-    <div class="subitems">
-      <i class="material-icons">
-        settings
-      </i>
-      Settings
-    </div>
-    <div class="subitems">
-      <i class="material-icons">
-        assignment
-      </i>
-      Document
-    </div>
-    <div class="last-subitems">
-      <div class="subitems">
-        <i class="material-icons">
-          verified_user
-        </i>
-        HTLM Version
-      </div>
-    </div>
-  </div>
-  <div class="content">
-    <div class="mdc-layout-grid">
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell--span-6">
-          <div class="welcome">
-            <div>
-              <div class="text">Welcome to infinity
-              </div>
-              <div class="under-text">Number of Views
-              </div>
-            </div>
-            <div class="number">120</div>
-          </div>
-        </div>
-        <div class="mdc-layout-grid__cell--span-6">
-          <div class="welcome">
-            <div>
-              <div class="text">Active
-              </div>
-              <div class="under-text">Leads/Contacts
-              </div>
-            </div>
-            <div class="number">325</div>
-          </div>
-        </div>
-      </div>
 
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell--span-3">
-          <div class="stat">
-            <div>
-              <div class="blue_namber">66,163k
-              </div>
-              <div class="under-text">Total Leads
-              </div>
-            </div>
-            <div class="number">
-              <i class="material-icons">
-                attach_file
-              </i>
-            </div>
-          </div>
-          <div class="bottom1">
-            <div class="change">%change
-            </div>
-            <div class="graf">
-              <embed src="images/leads.svg" width="25" height="10">
-            </div>
-          </div>
-        </div>
-        <div class="mdc-layout-grid__cell--span-3">
-          <div class="stat">
-            <div>
-              <div class="red_namber">3.490K
-              </div>
-              <div class="under-text">Total Pending
-              </div>
-            </div>
-            <div class="number">
-              <i class="material-icons">
-                block
-              </i>
-            </div>
-          </div>
-          <div class="bottom2">
-            <div class="change">%change
-            </div>
-            <div class="graf">
-              <embed src="images/pending.svg" width="25" height="10">
-            </div>
-          </div>
-        </div>
-        <div class="mdc-layout-grid__cell--span-3">
-          <div class="stat">
-            <div>
-              <div class="green_namber">8.372K
-              </div>
-              <div class="under-text">Case Closed
-              </div>
-            </div>
-            <div class="number">
-              <i class="material-icons">
-                lock_open
-              </i>
-            </div>
-          </div>
-          <div class="bottom3">
-            <div class="change">%change
-            </div>
-            <div class="graf">
-              <embed src="images/closed.svg" width="25" height="10">
-            </div>
-          </div>
-        </div>
-        <div class="mdc-layout-grid__cell--span-3">
-          <div class="stat">
-            <div>
-              <div class="yellow_namber">5.355K
-              </div>
-              <div class="under-text">Task Completed
-              </div>
-            </div>
-            <div class="number">
-              <i class="material-icons">
-                description
-              </i>
-            </div>
-          </div>
-          <div class="bottom4">
-            <div class="change">%change
-            </div>
-            <div class="graf">
-              <embed src="images/completed.svg" width="25" height="10">
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="menu"></div>
+  </div>
+
+  <div class="content">
+    
+    <div class="mdc-layout-grid">
+
+      <div class="topbl">
+      <div id="topblocks"></div>
+    </div>
+
       <div class="mdc-layout-grid__inner">
         <div class="mdc-layout-grid__cell--span-12">
           <div class="prob">
@@ -367,241 +81,22 @@
               </div>
             </div>
             <div class="number">
-              <canvas id="line-chart" width="500px" height="220px"></canvas>
+              <canvas id="line-chart" width="500px" height="220px">
+                <script src="js/line-chart.js" defer></script>
+              </canvas>
+              
             </div>
           </div>
         </div>
       </div>
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell--span-7">
-          <div class="table">
-            <div class="table_header">
-              ACTIVE LEADS
-            </div>
 
-            <table class="tb">
-              <tr>
-                <th>
-                  <div class="standart_tex">
-                    Type
-                  </div>
-                </th>
-                <th>
-                  <div class="standart_tex">
-                    Lead Name
-                  </div>
-                </th>
-                <th>
-                  <div class="standart_tex">
-                    Views
-                  </div>
-                </th>
-                <th>
-                  <div class="standart_tex">
-                    Favorites
-                  </div>
-                </th>
-                <th>
-                  <div class="standart_tex">
-                    Last Visit
-                  </div>
-                </th>
-                <th>
-                  <div class="standart_tex">
-                    Last Action
-                  </div>
-                </th>
-              </tr>
-              <tr>
-                <th class="blue_text">Buyer</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/internet.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-              <tr>
-                <th class="blue_text">Buyer</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/internet.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-              <tr>
-                <th class="green_text">Landlord</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/mas.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-              <tr>
-                <th class="blue_text">Buyer</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/mas.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-              <tr>
-                <th class="red_text">Seller</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/internet.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-              <tr>
-                <th class="blue_text">Buyer</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/internet.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-              <tr>
-                <th class="blue_text">Buyer</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/mas.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-              <tr>
-                <th class="blue_text">Buyer</th>
-                <th class="common_text">Denise Ann</th>
-                <th class="common_text">153</th>
-                <th class="common_text">0</th>
-                <th class="common_text">9:23 AM</th>
-                <th class="common_text"><embed src="images/internet.svg" height="7px" weight="7px">8/27/2019</th>
-              </tr>
-            </table>
-          </div>
+          <div id="table"></div>
 
-        </div>
-        <div class="mdc-layout-grid__cell--span-5">
-          <div class="todo_list">
-            <div class="todo">
-              <div class="todo_text">TODO LIST</div>
-              <div class="todo_button">
-                Togglle All
-              </div>
-            </div>
-            <div class="check">
-              <div class="check_text">
-                <div class="mdc-form-field">
-                  <div class="mdc-checkbox">
-                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1" id=" checkbox-2" />
-                    <div class="mdc-checkbox__background">
-                      <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                      </svg>
-                      <div class="mdc-checkbox__mixedmark"></div>
-                    </div>
-                  </div>
-                  <div class="check_text">Collaboratively administrate</div>
-
-                </div>
-              </div>
-              <div>
-                <div class="mdc-form-field">
-                  <div class="mdc-checkbox">
-                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1" id=" checkbox-2" />
-                    <div class="mdc-checkbox__background">
-                      <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                      </svg>
-                      <div class="mdc-checkbox__mixedmark"></div>
-                    </div>
-                  </div>
-                  <div class="check_text">
-                    <strike>Another todo on the list. Add as many you want.</strike>
-                  </div>
-                </div>
-              </div>
-              <div class="check_text">
-                <div class="mdc-form-field">
-                  <div class="mdc-checkbox">
-                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1" id=" checkbox-2" />
-                    <div class="mdc-checkbox__background">
-                      <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                      </svg>
-                      <div class="mdc-checkbox__mixedmark"></div>
-                    </div>
-                  </div>
-                  <div class="check_text">Dramatically maintain clicks-and-mortal</div>
-
-                </div>
-              </div>
-              <div class="check_text">
-                <div class="mdc-form-field">
-                  <div class="mdc-checkbox">
-                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1" id=" checkbox-2" />
-                    <div class="mdc-checkbox__background">
-                      <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
-                      </svg>
-                      <div class="mdc-checkbox__mixedmark"></div>
-                    </div>
-                  </div>
-                  <div class="check_text">administrate empowered markets</div>
-                </div>
-              </div>
-              <div class="under_table">
-                Writr some todo task here
-              </div>
-              <div class="All_act">
-                <div class="All">All</div>
-                <div class="active">Active</div>
-                <div class="clear">Clear Completed(1)</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mdc-layout-grid__inner">
+       <div class="mdc-layout-grid__inner">
         <div class="mdc-layout-grid__cell--span-6">
-          <div class="activities">
-            <div class="title">ACTIVITIES</div>
-            <div class="blue_activities">
-              <div class="flex">
-                <div class="blue">
-                </div>
-                <div class="activities_text">
-                  2 mins ago
-                </div>
-              </div>
-              <div class="main_text">
-                Template Builder Access(Video tutorial inside documentation)
-              </div>
-            </div>
-            <div class="red_activities">
-              <div class="flex">
-                <div class="red">
-                </div>
-                <div class="activities_text">
-                  1 hour ago
-                </div>
-              </div>
-              <div class="main_text">
-                Designed the wordpress Lily created her account
-              </div>
-            </div>
-            <div class="green_activities">
-              <div class="flex">
-                <div class="green">
-                </div>
-                <div class="activities_text">
-                  4:30 pm
-                </div>
-              </div>
-              <div class="main_text">
-                Your domain will expired in 13 days
-              </div>
-            </div>
-          </div>
+
+          <div id="activities"></div>
+
           <div class="act_graf">
             <div class="title">ACTIVITIES</div>
             <div class="flex">
@@ -647,41 +142,22 @@
           </div>
         </div>
       </div>
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell--span-12">
-          <div class="hover">
-            <div class="flex">
-              <div class="copy">
-                Copuring M7amadsa3ed 2015. All rights reserved
-              </div>
-              <div class="careers">
-                Careers
-              </div>
-              <div class="careers">
-                Privacy Policy
-              </div>
-            </div>
-            <div class="flex">
-              <div class="careers">
-                Feedback
-              </div>
-              <div class="pt">
-                ^
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <div id="hover"></div>
+      
     </div>
   </div>
-  </div>
+  <script type="text/babel" src="js/block.js" defer> </script>
+  <script type="text/babel" src="js/table.js" defer> </script>
+  <script type="text/babel" src="js/activities.js" defer> </script>
+  <script type="text/babel" src="js/hover.js" defer> </script>
+  <script type="text/babel" src="js/icons.js" defer> </script>
+  <script type="text/babel" src="js/menu.js" defer> </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="js/buttons.js"></script>
 <script src="js/pie-chart.js"></script>
 <script src="js/bar-chart.js"></script>
-<script src="js/line-chart.js">
 
-</script>
+
 
 </html>

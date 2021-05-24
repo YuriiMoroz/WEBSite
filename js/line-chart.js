@@ -1,4 +1,4 @@
-var dada = document.getElementById("line-chart").getContext("2d");
+var dada = document.getElementById("line-chart").getContext('2d');
 var gradient=dada.createLinearGradient(600,0,0,0);
 gradient.addColorStop(0, "#4daf4f");
 gradient.addColorStop(0.2, "#95ad2f");
