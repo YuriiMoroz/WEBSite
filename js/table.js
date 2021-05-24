@@ -68,8 +68,8 @@ class App extends React.Component{
 
   render(){
     return(
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell--span-7">
+      <div className="mdc-layout-grid__inner">
+        <div className="mdc-layout-grid__cell--span-7">
       <div className="table">
         <div class="table_header">
               ACTIVE LEADS
@@ -111,23 +111,23 @@ class App extends React.Component{
       </table>
       </div>
       </div>
-      <div class="mdc-layout-grid__cell--span-5">
-        <div class="todo_list">
-            <div class="todo">
-              <div class="todo_text">TODO LIST</div>
-              <div class="todo_button">
+      <div className="mdc-layout-grid__cell--span-5">
+        <div className="todo_list">
+            <div className="todo">
+              <div className="todo_text">TODO LIST</div>
+              <div className="todo_button">
                 Togglle All
               </div>
             </div>
-            <div class="check">
+            <div className="check">
               {this.renderBoxes()}
-              <div class="under_table">
+              <div className="under_table">
                 Writr some todo task here
               </div>
-              <div class="All_act">
-                <div class="All">All</div>
-                <div class="active">Active</div>
-                <div class="clear">Clear Completed(1)</div>
+              <div className="All_act">
+                <div className="All">All</div>
+                <div className="active">Active</div>
+                <div className="clear">Clear Completed(1)</div>
               </div>
             </div>
           </div>
